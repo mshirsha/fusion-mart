@@ -5,7 +5,7 @@
     // grid-template-columns: 15% 1fr 15%;
     margin-bottom: 80px;
     // height: 620px !important;
-    min-height: 500px;
+    grid-template-rows: 400px;
     display: grid;
     grid-template-columns: 50% 50%;
     // background: url('https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg');
@@ -16,7 +16,7 @@
         background: url('../media/images/banner2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 400px;
+       
     }
 
     // @media(max-width:1656px) {
@@ -137,8 +137,7 @@
     }
 
     .banner-product-img {
-        height: 100%;
-        width: 100%;
+
         background-color: #6e9285;
 
         @media(max-width:1150px) {

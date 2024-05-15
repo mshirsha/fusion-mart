@@ -3389,7 +3389,7 @@ a {
 
 .hero-section {
   margin-bottom: 80px;
-  min-height: 500px;
+  grid-template-rows: 400px;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -3399,7 +3399,6 @@ a {
     background: url("../media/images/banner2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
   }
 }
 .hero-section .hero-title {
@@ -3474,8 +3473,6 @@ a {
   border-radius: 1rem;
 }
 .hero-section .banner-product-img {
-  height: 100%;
-  width: 100%;
   background-color: #6e9285;
 }
 @media (max-width: 1150px) {

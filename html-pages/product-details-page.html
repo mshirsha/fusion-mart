@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" defer href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/sass/main.css">
+    <title>Product details page</title>
+</head>
+
+<body>
+    <!-- Product Details Page  -->
+    <div class="product-details-container">
+
+
+        <!-- Header -->
+        <header>
+            <div class="header-contents">
+                <div class="shopart-logo">
+                    <img src="../styles/media/logos/Rectangle 8 (2).jpg" alt="">
+
+                </div>
+
+
+                <!-- nav tabs -->
+                <ul class=" role-nav">
+
+                    <li class="">
+                        <a class=" Category-text" href="#">Category
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                        </a>
+
+                        <ul class="dropdown-menu secondary-dropdown">
+                            <li class="dropdown-head-container">
+                                <div class="dropdown-head">Popular Categories</div>
+                            </li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-1.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Furniture</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-2.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Hand Bag</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-3.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Shoe</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-5.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Headphone</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-6.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Laptop</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-7.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Book</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text disabled" href="#">Deals</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text disabled" href="#">What's New</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text disabled" href="#">Delivery</a>
+                    </li>
+                </ul>
+
+                <!-- Search Product -->
+                <div class="search-product">
+                    <input type="search" class="search-product-btn" placeholder="Search Product">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </div>
+
+                <!-- Account Button -->
+                <div class="header-action-btns">
+                    <a href="#" class="account-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                        <span>Account </span>
+                    </a>
+
+                    <!-- Cart Button -->
+                    <button type="button" class="btn cart-btn ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg>
+                        <span>Cart </span>
+                    </button>
+
+                    <!-- Humburger Menu -->
+                    <div>
+                        <div class="humburger-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Humburger Menu Dropdown Container -->
+            <div class="humburger-menu-dropdown humburger-dropdown">
+
+                <ul class=" role-nav mobile-view-nav">
+
+                    <li class="">
+                        <a class=" Category-text  menu-name" href="#">Category
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+
+                        </a>
+                        <ul class=" secondary-dropdown  dropdown mobile-view-dropdown  ">
+                            <li class="dropdown-head-container Category-title">
+                                <div class="dropdown-head">Popular Categories</div>
+                            </li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-1.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Furniture</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-2.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Hand Bag</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-3.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Shoe</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-5.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Headphone</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-6.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Laptop</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-7.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Book</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li class="">
+                        <a class=" Category-text  menu-name disabled" href="#">Deals</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text  menu-name disabled" href="#">What's New</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text  menu-name disabled" href="#">Delivery</a>
+                    </li>
+                </ul>
+
+            </div>
+        </header>
+
+
+        <!-- Product Details Main Container -->
+        <div class="product-details-main-container">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumb-row">
+
+                <div class="breadcrumbs">
+                    <a href="#">Electronics</a>
+                    <span> / </span>
+                    <a href="#">Audio</a>
+                    <span> / </span>
+                </div>
+                <div class="breadcrumbs">
+                    <a href="#" class="current-page">Headphones</a>
+                    <span> / </span>
+                    <a  href="#"  >airpods-max</a>
+                </div>
+
+
+
+            </div>
+
+            <!-- Product container -->
+            <div class="product-container">
+                <!--Product  Image Section  -->
+                <div class="product-img-section">
+                    <div class="product-name-section hide-text1">
+                        <h2 class="title-6">Airpods- Max</h2>
+                        <p>a perfect Balance of exhilarating high-fidelity audio and the effortless magic of AirPods.
+                        </p>
+                        <div class="product-rating">
+                            <div class="product-rating-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                            </div>
+                            <div class="product-purchase"> (1221)</div>
+
+                        </div>
+                    </div>
+                    <div class="product-img">
+                        <img src="../styles/media/images/headphone-img.jpg" alt="">
+
+                    </div>
+                    <div class=" product-colors-container">
+                        <div class="product-colors-img">
+                            <img src="../styles/media/images/color-headphone.jpg" alt="">
+                        </div>
+                        <div class="product-colors-img">
+                            <img src="../styles/media/images/color-headphone2.jpg" alt="">
+                        </div>
+                        <div class="product-colors-img">
+                            <img src="../styles/media/images/headphone4.jpg" alt="">
+                        </div>
+                        <div class="product-colors-img">
+                            <img src="../styles/media/images/headphone7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details Section-->
+                <div class="product-details-section">
+                    <div class="product-name-section   hide-text2">
+                        <h2 class="title-6">Airpods- Max</h2>
+                        <p>a perfect Balance of exhilarating high-fidelity audio and the effortless magic of AirPods.
+                        </p>
+                        <div class="product-rating">
+                            <div class="product-rating-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star-half" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#08ac0a"
+                                    class="bi bi-star" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                </svg>
+                            </div>
+                            <div class="product-purchase"> (1221)</div>
+
+                        </div>
+                    </div>
+
+                    <div class="Price-section">
+                        <p class="product-pricing-text"> <strong>$555.00 or 99.99/month</strong></p>
+                        <p>Suggested payments with 6 months special financing </p>
+                    </div>
+
+                    <div class="color-option-section">
+                        <p class="color-option-title">Choose a color</p>
+                        <div class="color-options">
+                            <div class=" color-option"></div>
+                            <div class=" color-option"></div>
+                            <div class=" color-option"></div>
+                            <div class=" color-option"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="product-counter-row">
+
+                        <div class="input-group">
+                            <span class="input-group-text decrement-input">
+                                <button class="btn btn-primary decrement-btn" id="decrementBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-dash" viewBox="0 0 16 16">
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <input type="text" class="form-control text-center counter-input" id="counterValue"
+                                value="0" readonly>
+                            <span class="input-group-text decrement-input">
+                                <button class="btn btn-primary decrement-btn" id="incrementBtn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                    </svg>
+                                </button>
+                            </span>
+                        </div>
+
+
+
+                        <div>
+                            <div>Only 12 Items Left!</div>
+                            <div>Don't miss it</div>
+                        </div>
+                    </div>
+                    <div class="buy-or-add-btns">
+
+                        <a class="btn  action-btn " href="order-summary.html" type="submit">Buy Now </a>
+
+                        <a class="btn action-btn " href="order-summary.html" type="submit">Add to Cart</a>
+                    </div>
+
+
+                    <!-- Delivery Information  Card-->
+                    <div class="product-delivery-container">
+                        <div class="delivery-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff5a00"
+                                    class="bi bi-truck" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                </svg>
+                                <span>Free Delivery</span>
+
+                            </div>
+                            <input type="text" placeholder="Enter your Postal Code For Delivery Availability">
+                        </div>
+                        <div class="delivery-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ff5a00"
+                                    class="bi bi-clipboard" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                                    <path
+                                        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+                                </svg>
+                                <span>Return Delivery</span>
+
+                            </div>
+                            <p>Free 30days Delivery Returns.<a href="">Details</a></p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-section">
+            <div class="index-footer-container">
+                <div class="index-footer">
+                    <div class="footer-col1">
+                        <div class=" shopart-logo  m-b-32">
+                            <img src="../styles/media/logos/Rectangle 8 (2).jpg" alt="">
+
+                        </div>
+                        <p class="m-b-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nobis eligendi
+                            vitae officiis
+                        </p>
+                        <h6 class="payment-title m-b-20">Accepted Payments</h6>
+                        <div class="payment-logos-conatiner">
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-1.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-2.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-3.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-4.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-5.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-6.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-7.png" alt="">
+                            </div>
+                            <div class="payment-logo">
+                                <img src="../styles/media/logos/pay-logo-8.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="footer-col2">
+                        <h5 class="section-title5">Department</h5>
+                        <ul>
+                            <li>furniture</li>
+                            <li>Fashion</li>
+                            <li>Electronics & Gadgets</li>
+                            <li>Education Product</li>
+                            <li>toys</li>
+                            <li>organic Grocery</li>
+                            <li>Books</li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="footer-col2">
+                        <h5 class="section-title5">About Us</h5>
+                        <ul>
+                            <li>furniture</li>
+                            <li>Fashion</li>
+                            <li>Electronics & Gadgets</li>
+                            <li>Education Product</li>
+                            <li>toys</li>
+                            <li>organic Grocery</li>
+                            <li>Books</li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="footer-col2">
+                        <h5 class="section-title5">Services</h5>
+                        <ul>
+                            <li>furniture</li>
+                            <li>Fashion</li>
+                            <li>Electronics & Gadgets</li>
+                            <li>Education Product</li>
+                            <li>toys</li>
+                            <li>organic Grocery</li>
+                            <li>Books</li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="footer-col2">
+                        <h5 class="section-title5">Help</h5>
+                        <ul>
+                            <li>furniture</li>
+                            <li>Fashion</li>
+                            <li>Electronics & Gadgets</li>
+                            <li>Education Product</li>
+                            <li>toys</li>
+                            <li>organic Grocery</li>
+                            <li>Books</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <!--  secondary (Bottom) footer -->
+                <div class="secondary-footer-conatiner">
+                    <div class="promotion-container">
+                        <div class="promotion-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A9376E"
+                                class="bi bi-briefcase" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+                            </svg>
+                            <span>Become Seller</span>
+                        </div>
+                        <div class="promotion-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A9376E"
+                                class="bi bi-gift" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z" />
+                            </svg>
+                            <span>Gift Cards</span>
+                        </div>
+                        <div class="promotion-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#A9376E"
+                                class="bi bi-question-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                            </svg>
+                            <span>Help Center</span>
+                        </div>
+
+                    </div>
+
+                    <div class="secondary-footer-ts">
+                        <span>Terms of Service</span>
+                        <span>Privacy & Policy</span>
+                    </div>
+                    <div>
+                        <p>All Right reserved by Musemind|2000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

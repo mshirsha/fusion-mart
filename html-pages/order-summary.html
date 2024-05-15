@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" defer href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/sass/main.css">
+    <title>order summary</title>
+</head>
+
+<body>
+    <!-- Order Summary -Page -->
+    <div class="order-summary-page-container">
+
+        <!-- Header -->
+        <header>
+            <div class="header-contents">
+                <div class="shopart-logo">
+                    <img src="../styles/media/logos/Rectangle 8 (2).jpg" alt="">
+
+                </div>
+
+                <!-- nav tabs -->
+                <ul class=" role-nav">
+
+                    <li>
+                        <a class=" Category-text" href="#">Category
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                        </a>
+
+                        <ul class="dropdown-menu secondary-dropdown">
+                            <li class="dropdown-head-container">
+                                <div class="dropdown-head">Popular Categories</div>
+                            </li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-1.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Furniture</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-2.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Hand Bag</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-3.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Shoe</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-5.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Headphone</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-6.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Laptop</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-7.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Book</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text disabled" href="#">Deals</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text disabled" href="#">What's New</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text disabled" href="#">Delivery</a>
+                    </li>
+                </ul>
+
+                <div class="search-product">
+                    <input type="search" class="search-product-btn" placeholder="Search Product">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </div>
+
+                <!-- Account Button -->
+                <div class="header-action-btns">
+                    <a href="#" class="account-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                        <span>Account </span>
+                    </a>
+
+                    <!-- Cart Button -->
+                    <button type="button" class="btn cart-btn ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg>
+                        <span>Cart </span>
+                    </button>
+
+                    <!-- Humburger Menu -->
+                    <div>
+                        <div class="humburger-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Humburger Dropdown Container  -->
+            <div class="humburger-menu-dropdown humburger-dropdown">
+
+                <ul class=" role-nav mobile-view-nav">
+
+                    <li class="">
+                        <a class=" Category-text  menu-name" href="#">Category
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+
+                        </a>
+                        <ul class=" secondary-dropdown  dropdown mobile-view-dropdown  ">
+                            <li class="dropdown-head-container Category-title">
+                                <div class="dropdown-head">Popular Categories</div>
+                            </li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-1.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Furniture</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-2.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Hand Bag</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-3.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Shoe</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-5.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Headphone</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-6.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Laptop</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+                            <li><a class=" Category-text dropdown-list" href="#">
+                                    <div>
+                                        <img src="./styles/media/images/furniture-7.jpg" alt="">
+                                    </div>
+                                    <div class="Category-link-content">
+                                        <span>Book</span>
+                                        <p>250 Items Available</p>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li class="">
+                        <a class=" Category-text  menu-name disabled" href="#">Deals</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text  menu-name disabled" href="#">What's New</a>
+                    </li>
+                    <li class="">
+                        <a class=" Category-text  menu-name disabled" href="#">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Order Summary  -->
+        <div class="order-summary-main-container">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumb-row  ">
+                <div class="breadcrumbs">
+                    <a href="#">Home </a>
+                    <span> / </span>
+                    <span class="current-page">Checkout</span>
+                </div>
+
+            </div>
+            <!-- Review Item And Shipping -->
+            <div class="order-summary-wrap">
+                <div class="product-review-container">
+
+
+                    <div class="product-review-cart">
+                        <h4 class="section-title5">Review Item And Shipping</h4>
+                        <div class="review-cart">
+                            <div class="product-review-img">
+                                <img src="../styles/media/images/headphone-img.jpg" alt="">
+
+                            </div>
+                            <div class="product-cart">
+
+                                <div class="product-review-title">
+                                    <h6>AirPods-Max</h6>
+                                    <span>Color: Pink</span>
+
+                                </div>
+
+                                <div class="quantity-num">
+                                    <div> $555.00</div>
+                                    <div>Quantity:01</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <!-- checkbox -->
+                    <div class="form-check  m-b-16">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Returning Customer?
+                        </label>
+                    </div>
+
+                    <!-- Delivery Information -->
+                    <div class="delivery-inf-container">
+                        <div class="delivery-inf-title">
+                            <h4>Delivery Information</h4>
+                            <button class="badge-btn">Save Information</button>
+                        </div>
+                        <form>
+
+                            <div class="row">
+                                <div class=" col-md-6 col-sm-12 column-gap  bottom-spacing">
+                                    <label for="name1">First Name </label>
+                                    <input id="name1" type="text" placeholder="Type here...">
+                                </div>
+
+                                <div class=" col-md-6 col-sm-12 column-gap">
+                                    <label for="name2">Last Name</label>
+                                    <input id="name2" type="text" placeholder="Type here...">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class=" col-md-6 col-sm-12 column-gap  bottom-spacing">
+                                    <label for="city">City/Town</label>
+                                    <input id="city" type="text" placeholder="Type here...">
+                                </div>
+
+                                <div class=" col-md-6 col-sm-12 column-gap">
+                                    <label for="zip">Zip Code</label>
+                                    <input id="zip" type="number" placeholder="Type here...">
+                                </div>
+                            </div>
+                            <div class=" row  one-row">
+                                <div class="  col-sm-12 column-gap">
+                                    <label for="address">Address </label>
+                                    <input id="address" type="text" placeholder="Type here...">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col-md-6 col-sm-12 column-gap  bottom-spacing">
+                                    <label for="mobile">Mobile</label>
+                                    <input id="mobile" type="number" placeholder="Type here...">
+                                </div>
+                                <div class=" col-md-6 col-sm-12 column-gap">
+                                    <label for="email">Email Address</label>
+                                    <input id="email" type="email" placeholder="Type here...">
+                                </div>
+
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <aside class="order-summary">
+                    <h4 class="section-title5">Order Summary</h4>
+                    <div class="input-group mb-3  coupon-input-container">
+                        <input type="text" class="form-control enter-coupon-input" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-primary action-btn buy-btn apply-coupon-btn" type="submit">Apply Coupon
+                        </button>
+                    </div>
+                    <h5 class="title-6">Payment Details</h5>
+                    <div class="form-check m-b-8">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Cash on Delivery
+                        </label>
+                    </div>
+                    <div class="form-check m-b-8">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Shopcart Card
+                        </label>
+                    </div>
+                    <div class="form-check m-b-8">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Paypal
+                        </label>
+                    </div>
+                    <div class="form-check m-b-8">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Credit or Debit card
+                        </label>
+                    </div>
+
+                    <div class="payment-options">
+                        <div class="payment-option-img">
+                            <img src="../styles/media/logos/amzon-logo.jpg" alt="">
+                        </div>
+                        <div class="payment-option-img">
+                            <img src="../styles/media/logos/payment.jpg" alt="">
+                        </div>
+                        <div class="payment-option-img">
+                            <img src="../styles/media/logos/visa.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <form class="order-summary-form">
+                        <div class="row">
+
+                            <div class=" col-sm-12 column-gap">
+                                <label for="email">Email </label>
+                                <input id="email" type="email" placeholder="Type here...">
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="  col-sm-12 column-gap">
+                                <label for="card1">Card Holder Name</label>
+                                <input id="card1" type="text" placeholder="Type here...">
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="  col-sm-12 column-gap">
+                                <label for="card2">Card Number</label>
+                                <input id="card2" type="number" placeholder="Type here...">
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+
+                            <div class=" col-md-6 col-sm-12 column-gap bottom-spacing">
+                                <label for="expiry">Expiry</label>
+                                <input id="expiry" type="date" placeholder="Type here...">
+                            </div>
+                            <div class=" col-md-6 col-sm-12 column-gap">
+                                <label for="cvc">CVC</label>
+                                <input id="cvc" type="number" placeholder="000">
+                            </div>
+
+
+                        </div>
+
+                    </form>
+
+                    <!-- Sub Total section -->
+                    <div class="sub-total-section">
+                        <div class="cal-section">
+                            <div>Sub Total</div>
+                            <div>
+                                $549.00
+                            </div>
+                        </div>
+                        <div class="cal-section">
+                            <div>Tax(10%)</div>
+                            <div>
+                                $54.00
+                            </div>
+                        </div>
+                        <div class="cal-section">
+                            <div>Coupon Discount</div>
+                            <div>
+                                $54.90
+                            </div>
+                        </div>
+                        <div class="cal-section">
+                            <div>Shipping Cost</div>
+                            <div>
+                                $0.00
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Total bil section -->
+                    <div class="total-section">
+
+                        <div class="total-section-wrap m-b-16">
+                            <div>
+                                Total
+                            </div>
+                            <div>=$494.10</div>
+                        </div>
+                        <button class="btn btn-primary action-btn buy-btn total-cal">Pay $494.10 </button>
+                    </div>
+
+
+                </aside>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -181,10 +181,28 @@
     justify-content: center !important;
     background-color: white !important;
     color: black !important;
+    border: unset !important;
     // @media(max-width:1150px) {
     //     background-color: white !important;
     //     color: black !important;
     // }
+
+}
+
+.learn-more-btn:hover{
+    background-color:  rgb(14 75 55) !important;
+        color: white !important;
+}
+.learn-more-btn:active{
+    background-color:rgb(1, 24, 16) !important;
+        color: white !important;
+}
+.learn-more-btn:focus{
+    border: 1px solid rgb(21, 121, 87) !important;
+    outline: none; /* Removes default browser outline */
+    box-shadow: 0 0 0 3px rgba(181, 241, 211, 0.5); /* Adds a custom focus outline */
+    background-color: rgb(3, 68, 46) !important;
+    color: white !important;  
 
 }
 
@@ -260,12 +278,18 @@
     width: 100%;
     border-radius: .6rem;
     overflow: hidden;
-
+   
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+}
+.shop-categ-card:hover{
+     
+       transform: translatey(-15px);
+       transition: .5s;
+
 }
 
 .Trending-Products-container {
@@ -288,6 +312,9 @@
     overflow: hidden;
 }
 
+// .Products-card:hover{
+//         transform: scale(1.2);
+//     }
 .card-product-img {
     height: 320px;
     width: 100%;
@@ -298,6 +325,10 @@
     }
 }
 
+.card-product-img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
 .Trending-Products {
     grid-column: 2/3;
     display: grid;

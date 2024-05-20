@@ -214,7 +214,7 @@
 
 .product-card {
     position: relative;
-    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     overflow: hidden;
 }
@@ -259,7 +259,7 @@
 }
 
 .product-card-content{
-    padding: .5rem 1rem 1rem 1rem;
+    padding:  1rem;
 }
 .product-card-title {
     display: flex;

@@ -3850,6 +3850,11 @@ a {
   object-fit: cover;
 }
 
+.product-review-img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
 .order-summary {
   padding: 1.5rem;
   border: 1px solid #bfbbbb;
